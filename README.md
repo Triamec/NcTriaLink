@@ -26,7 +26,6 @@ RAM Device. The Vendor ID is 1618 and the Device ID is:
 Press **Search...** to find the Adapter.
 ![Tria-Link Adapter](./doc/TriaLink.png)
 
-
 ## Global Variable List (Triamec_GVL)
 The following global variables have been defined to control and monitor the Tria-Link bus and axes.
 
@@ -36,5 +35,13 @@ The following global variables have been defined to control and monitor the Tria
 | gEnableAxes | variable to enable all axes |
 | gResetAxes | variable to reset all axes |
 | gCommunicationReady | indicator for Tria-Link and axes readiness |
+
+## Test the example
+- **Save** and **Rebuild** the Solution
+- **Activate** the configuration and set TwinCAT to *Run Mode*
+- **Login** and **Start** the PLC
+- Open *Triamec_GVL* and set **gEnableTrialink** to **TRUE** and wait for **gCommunicationReady** getting **TRUE**
+- Enable the axes by setting **gEnableAxes** to **TRUE**
+- If an error occurs, toggle **gResetAxes** an try to enable again
 
 
