@@ -4,9 +4,26 @@
 This TwinCAT 3 application example helps you getting started to use a *Triamec* drive with *Tria-Link* fieldbus.
 
 ## Prerequesites
-The following prerequisites have to be met to use this example code.
+The following prerequisites have to be met using this example code.
 - A PC with a Tria-Link adapter (TL) installed.
 - An installation of TwinCAT3 (3.1.4024 or newer).
 - Triamec Tria-Link Library (TriamecLib 3.10.1.0 or newer)
 - Drive commissioned
 - All drives must be powered and connected to the Tria-Link adapter building a ring topology
+
+## Tria-Link Adapter
+Open the DPRAM settings for the Tria-Link adapter board in I/O > Devices > TriaLink > Generic NOV-DP-
+RAM Device. The Vendor ID is 1618 and the Device ID is:
+- *0200* for a TL100
+- *0201* for a TLC201
+- *0202* for a TLC100
+- *0203* for a TL300 (PCIe)
+- *0204* for a TLO100 (with USB Observer)
+- *0205* for a TLO300 (PCIe, with USB Observer)
+- *0206* for a TLOC100 (with USB Observer and additional controller)
+- *0211* for a TL (formerly TLO400; PCIe with DMA and USB Observer)
+Press **Search...** to find the Adapter.
+
+
+## Global Variable List (GVL)
+
