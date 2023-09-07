@@ -51,7 +51,7 @@ Trialink.Config.TcEventEnable := TRUE;
 (* Axes configuration *)
 (* ---------- Axis 1 ---------- *)
 Axes[1].inc_per_unit 		:= 1000000; // scale between CNC and PLC
-Axes[1].Config.Simulate   	:= TRUE;
+Axes[1].Config.Simulate   	:= FALSE;
 Axes[1].Config.Station    	:= 10;		// The drive address
 Axes[1].Config.SubAxis    	:= TL_Config.SubAxis.FirstAxis; // first or second axis of a two axes drive
 Axes[1].Config.GearFactor 	:= 1;		// multiplication factor of position and velocity data
