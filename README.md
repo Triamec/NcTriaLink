@@ -22,7 +22,9 @@ RAM Device. The Vendor ID is 1618 and the Device ID is:
 - *0205* for a TLO300 (PCIe, with USB Observer)
 - *0206* for a TLOC100 (with USB Observer and additional controller)
 - *0211* for a TL (formerly TLO400; PCIe with DMA and USB Observer)
+
 Press **Search...** to find the Adapter.
+![Tria-Link Adapter](./doc/TriaLink.png)
 
 
 ## Global Variable List (GVL)
