@@ -27,5 +27,13 @@ Press **Search...** to find the Adapter.
 ![Tria-Link Adapter](./doc/TriaLink.png)
 
 
-## Global Variable List (GVL)
+## Global Variable List (Triamec_GVL)
+The following global variables have been defined to control and monitor the Tria-Link bus and axes.
+| Variable | Description |
+|---|---|
+| gEnableTrialink | variable to enable Tria-Link |
+| gEnableAxes | variable to enable all axes |
+| gResetAxes | variable to reset all axes |
+| gCommunicationReady | indicator for Tria-Link and axes readiness |
+
 
