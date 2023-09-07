@@ -41,7 +41,10 @@ The following global variables have been defined to control and monitor the Tria
 - **Activate** the configuration and set TwinCAT to *Run Mode*
 - **Login** and **Start** the PLC
 - Open *Triamec_GVL* and set **gEnableTrialink** to **TRUE** and wait for **gCommunicationReady** getting **TRUE**
+> [!NOTE]
+> it can take up to 6s to boot the Tria-Link
 - Enable the axes by setting **gEnableAxes** to **TRUE**
 - If an error occurs, toggle **gResetAxes** an try to enable again
+- 
 
 
