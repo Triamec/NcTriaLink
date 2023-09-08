@@ -3,7 +3,7 @@
 
 This TwinCAT 3 application example helps you getting started to use a *Triamec* drive with *Tria-Link* fieldbus.
 
-## Prerequesites
+### Prerequesites
 The following prerequisites have to be met using this example code.
 - A PC with a Tria-Link adapter (TL) installed.
 - An installation of TwinCAT3 (3.1.4024 or newer).
@@ -11,7 +11,7 @@ The following prerequisites have to be met using this example code.
 - Drive commissioned
 - All drives must be powered and connected to the Tria-Link adapter building a ring topology
 
-## Tria-Link Adapter
+### Tria-Link Adapter
 Open the DPRAM settings for the Tria-Link adapter board in I/O > Devices > TriaLink > Generic NOV-DP-
 RAM Device. The Vendor ID is 1618 and the Device ID is:
 - *0200* for a TL100
@@ -26,7 +26,7 @@ RAM Device. The Vendor ID is 1618 and the Device ID is:
 Press **Search...** to find the Adapter on your System.
 ![Tria-Link Adapter](./doc/TriaLink.png)
 
-## Global Variable List (Triamec_GVL)
+### Global Variable List (Triamec_GVL)
 The following global variables have been defined to control and monitor the Tria-Link bus and axes.
 | Variable | Description |
 |---|---|
@@ -35,14 +35,14 @@ The following global variables have been defined to control and monitor the Tria
 | gResetAxes | variable to reset all axes |
 | gCommunicationReady | indicator for Tria-Link and axes readiness |
 
-## NC Axis Function Block (TL_NCI_Axis)
+### NC Axis Function Block (TL_NCI_Axis)
 The function block extends *TL_Axis2* available in the Triamec library by the NC specific interfaces.
 Inputs and outputs (%I*, %Q*) are specified to link the axis function block and NC Axis. Ensure that these links are in place.
 ![Mapping](./doc/Mapping.png)
 > [!NOTE]
 > The example code makes use of the *Beckhoff* library *Tc2_CncHli*. Add it to the project.
 
-## Test the example
+## Test the Example
 - **Save** and **Rebuild** the Solution
 - **Activate** the configuration and set TwinCAT to *Run Mode*
 - **Login** and **Start** the PLC
