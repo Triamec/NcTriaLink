@@ -26,6 +26,9 @@ RAM Device. The Vendor ID is 1618 and the Device ID is:
 Press **Search...** to find the Adapter on your System.
 ![Tria-Link Adapter](./doc/TriaLink.png)
 
+> [!NOTE]
+> Make sure, that TwinCAT is in **Config** Mode before you search the Tria-Link Adapter.
+
 ### Global Variable List (Triamec_GVL)
 The following global variables have been defined to control and monitor the Tria-Link bus and axes.
 | Variable | Description |
