@@ -14,14 +14,14 @@ The following prerequisites have to be met using this example code.
 ### Tria-Link Adapter
 Open the DPRAM settings for the Tria-Link adapter board in I/O > Devices > TriaLink > Generic NOV-DP-
 RAM Device. The Vendor ID is 1618 and the Device ID is:
-- *0200* for a TL100
-- *0201* for a TLC201
-- *0202* for a TLC100
-- *0203* for a TL300 (PCIe)
-- *0204* for a TLO100 (with USB Observer)
-- *0205* for a TLO300 (PCIe, with USB Observer)
-- *0206* for a TLOC100 (with USB Observer and additional controller)
-- *0211* for a TL (formerly TLO400; PCIe with DMA and USB Observer)
+- **0200** for a TL100
+- **0201** for a TLC201
+- **0202** for a TLC100
+- **0203** for a TL300 (PCIe)
+- **0204** for a TLO100 (with USB Observer)
+- **0205** for a TLO300 (PCIe, with USB Observer)
+- **0206** for a TLOC100 (with USB Observer and additional controller)
+- **0211** for a TL (formerly TLO400; PCIe with DMA and USB Observer)
 
 Press **Search...** to find the Adapter on your System.
 ![Tria-Link Adapter](./doc/TriaLink.png)
@@ -54,6 +54,10 @@ Inputs and outputs (%I*, %Q*) are specified to link the axis function block and 
 > it can take up to 6s to boot the Tria-Link
 - Enable the axes by setting **gEnableAxes** to **TRUE**
 - If an error occurs, toggle **gResetAxes** an try to enable again
-- 
+
+#### Ready to move the axes
+You should now be able to control the axes over NC Axis GUI (Online GUI).
+The buttons **-- F1**, **- F2**, **+ F3** and **++ F4** are in the **MOTION > NC-Task 1 SAF > Axes > Axis N > Online** dialog.
+![Online Dialog](./doc/OnlineDialog.png)
 
 
