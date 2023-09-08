@@ -42,8 +42,6 @@ The following global variables have been defined to control and monitor the Tria
 The function block extends *TL_Axis2* available in the Triamec library by the NC specific interfaces.
 Inputs and outputs (%I*, %Q*) are specified to link the axis function block and NC Axis. Ensure that these links are in place.
 ![Mapping](./doc/Mapping.png)
-> [!NOTE]
-> The example code makes use of the *Beckhoff* library *Tc2_CncHli*. Add it to the project.
 
 ## Test the Example
 - **Save** and **Rebuild** the Solution
