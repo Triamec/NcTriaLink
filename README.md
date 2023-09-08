@@ -23,11 +23,18 @@ RAM Device. The Vendor ID is 1618 and the Device ID is:
 - *0206* for a TLOC100 (with USB Observer and additional controller)
 - *0211* for a TL (formerly TLO400; PCIe with DMA and USB Observer)
 
-Press **Search...** to find the Adapter.
+Press **Search...** to find the Adapter on your System.
 ![Tria-Link Adapter](./doc/TriaLink.png)
 
 ## Global Variable List (Triamec_GVL)
 The following global variables have been defined to control and monitor the Tria-Link bus and axes.
+
+## NC Axis Function Block (TL_NCI_Axis)
+The function block extends *TL_Axis2* available in the Triamec library by the NC specific interfaces.
+Inputs and outputs (%I*, %Q*) are specified to link the axis function block and NC Axis. Ensure that these links are in place.
+![Mapping](./doc/Mapping.png)
+> [!NOTE]
+> The example code makes use of the *Beckhoff* library *Tc2_CncHli*. Add it to the project.
 
 | Variable | Description |
 |---|---|
