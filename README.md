@@ -28,6 +28,12 @@ Press **Search...** to find the Adapter on your System.
 
 ## Global Variable List (Triamec_GVL)
 The following global variables have been defined to control and monitor the Tria-Link bus and axes.
+| Variable | Description |
+|---|---|
+| gEnableTrialink | variable to enable Tria-Link |
+| gEnableAxes | variable to enable all axes |
+| gResetAxes | variable to reset all axes |
+| gCommunicationReady | indicator for Tria-Link and axes readiness |
 
 ## NC Axis Function Block (TL_NCI_Axis)
 The function block extends *TL_Axis2* available in the Triamec library by the NC specific interfaces.
@@ -35,13 +41,6 @@ Inputs and outputs (%I*, %Q*) are specified to link the axis function block and 
 ![Mapping](./doc/Mapping.png)
 > [!NOTE]
 > The example code makes use of the *Beckhoff* library *Tc2_CncHli*. Add it to the project.
-
-| Variable | Description |
-|---|---|
-| gEnableTrialink | variable to enable Tria-Link |
-| gEnableAxes | variable to enable all axes |
-| gResetAxes | variable to reset all axes |
-| gCommunicationReady | indicator for Tria-Link and axes readiness |
 
 ## Test the example
 - **Save** and **Rebuild** the Solution
