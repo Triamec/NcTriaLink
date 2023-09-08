@@ -2,6 +2,9 @@
 [![TwinCAT - TriaLink](https://img.shields.io/static/v1?label=TwinCAT&message=Tria-Link&color=b51839)](https://www.triamec.com/de/beckhoff-tam-integration-tria-link.html)
 
 This TwinCAT 3 application example helps you getting started to use a *Triamec* drive with *Tria-Link* fieldbus.
+> [!WARNING]
+> Example tested with following libraries:
+> ![Library](./doc/Library.png)
 
 ### Prerequesites
 The following prerequisites have to be met using this example code.
