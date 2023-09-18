@@ -17,6 +17,7 @@ The following prerequisites have to be met using this example code.
 - An installation of TwinCAT3 (3.1.4024 or newer).
 - *TriamecLib* 3.10.1.0 or newer installed. Available as download from [triamec.com](https://www.triamec.com/de/beckhoff-tam-integration-tria-link.html).
 - Drive commissioned. Checkout the *Servo Drive Setup Guide* from the [documents](https://www.triamec.com/en/documents.html) page.
+- This example targets a drive with `General/Parameters/LinkAddress = 10`. Set `General/Parameters/UseDedicatedLinkAddresses = True` to enforce the correct address.
 - All drives must be powered and connected to the *Tria-Link* adapter, building a ring topology.
 
 ## Tria-Link Adapter
@@ -30,6 +31,10 @@ Press **Search...** to find the Adapter on your System.
 
 > [!NOTE]
 > Make sure, that TwinCAT is in **Config Mode** before you search the *Tria-Link* Adapter.
+
+## TwinCAT SYSTEM
+
+Make sure to use an isolated core on the TwinCAT PC. As each PC is different, ensure to set up the **SYSTEM > Real-Time > Settings** accordingly. 
 
 ## Global Variable List (Triamec_GVL)
 
