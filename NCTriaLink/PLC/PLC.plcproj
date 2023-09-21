@@ -25,7 +25,7 @@
     <Compile Include="Fast_Task.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\TL_NCI_Axis.TcPOU">
+    <Compile Include="POUs\NC_Axis.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\Triamec_GVL.TcGVL">

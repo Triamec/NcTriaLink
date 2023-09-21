@@ -7,8 +7,8 @@ VAR CONSTANT
 END_VAR
 
 VAR
-	Trialink : Triamec.TL_Trialink2; 			(* the Tria-Link adapter *)
-	Axes : ARRAY [1..cAxes] OF TL_NCI_Axis; 	(* the extended triamec axis object with link to the NCI *)
+	Trialink : Triamec.TL_Trialink2; 		(* the Tria-Link adapter *)
+	Axes : ARRAY [1..cAxes] OF NC_Axis; 	(* the extended triamec axis object with link to the NC *)
 	
 	initDone : BOOL;	(* initialization done *)
 	i : USINT; 			(* counter variable *)
